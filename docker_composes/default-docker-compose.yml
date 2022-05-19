@@ -1,0 +1,15 @@
+version: "3.9"
+
+
+services:
+    shell_bot:
+        build: ../
+        environment:
+            # Required
+            SHELLBOT_TOKEN: "..."
+            SHELLBOT_PREFIX: "..."
+
+            # Optional
+            # https://github.com/Gorialis/jishaku/blob/master/jishaku/flags.py#L137
+            JISHAKU_ALWAYS_DM_TRACEBACK: "true"
+            JISHAKU_NO_UNDERSCORE: "true"

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "shell_bot"
+version = "0.1.0"
+description = "Bot for [jishaku](https://github.com/Gorialis/jishaku) interface with docker support"
+authors = ["lev"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jishaku = "^2.5.0"
+"discord.py" = "^1.7.3"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+shell_bot = "shell_bot.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
